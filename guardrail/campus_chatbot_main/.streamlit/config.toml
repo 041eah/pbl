@@ -1,0 +1,30 @@
+# 테마를 light로 '고정'한다.
+# 이전 버전에서 입력창 배경이 계속 검은색으로 깨졌던 원인: OS/브라우저가 다크모드면
+# Streamlit이 자동으로 dark 테마를 적용 → CSS를 덮어써도 내부 요소가 검게 나옴.
+[theme]
+base = "light"
+primaryColor = "#892827"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f1f2f7"
+textColor = "#242333"
+borderColor = "#c3c5d3"
+baseRadius = "12px"
+font = "Pretendard"
+
+# 폰트: Pretendard(OFL) 를 static/ 폴더에서 직접 제공 → 인터넷 없어도 슈리챗과 같은 글꼴
+[[theme.fontFaces]]
+family = "Pretendard"
+url = "app/static/PretendardVariable.woff2"
+weight = "45 920"
+style = "normal"
+
+[client]
+toolbarMode = "minimal"
+showSidebarNavigation = false
+showErrorDetails = true
+
+[server]
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false

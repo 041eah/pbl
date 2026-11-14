@@ -1,0 +1,12 @@
+streamlit==1.64.0
+faker
+anthropic
+markdown
+openai
+requests
+ollama
+presidio-analyzer
+presidio-anonymizer
+guardrails-ai
+guardrails-ai-guardrails-pii
+openpyxl
